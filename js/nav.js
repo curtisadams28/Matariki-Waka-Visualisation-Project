@@ -1,4 +1,22 @@
 
+var activestarmode;
+$.ajax({
+  url: "https://matarikiwaka-functions.azurewebsites.net/api/waka/current",
+}).done(function(data) {
+  for (var i = 0; i < 7; i++) {
+    var isactive = data.starModes[i].isActive;
+    var starmode = data.starModes[i].starMode;
+    if (isactive == true) {
+      activestarmode = starmode;
+    }
+  }
+  test = data.starModes;
+  //console.log(test);
+  console.log("inside function: " + activestarmode);
+  return activestarmode;
+});
+console.log();
+
 var stardesc = ["Eyes of God", "Salt Water", "Fresh Water", "That which grows in the sky", "That which grows in the ground", "Wind and weather", "Water that pools in the sky"];
 $(document).ready(function() {
 
@@ -47,8 +65,6 @@ $(document).ready(function() {
     document.getElementById("desc").innerHTML = stardesc[i];
     changeBackground(starmode);
   }
-
-
 
   $('#links a').click(function() {
     var url = $(this).attr('href');
