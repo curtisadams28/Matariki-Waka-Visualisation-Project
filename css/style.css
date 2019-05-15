@@ -28,7 +28,13 @@ body {
 .tapu-aa-rangi {
   background-image: linear-gradient(#c6d838, #48992d);
   height: 100vh;
+  z-index: 5;
 
+}
+
+.tapu-aa-nuku {
+  background-image: linear-gradient(#a8a879, #E2E2B5);
+  height: 100vh;
 }
 
 .waitaa {
@@ -52,7 +58,7 @@ body {
 }
 
 .container {
-  background-image: url("/img/Tapu-aa-nuku1.svg");
+  /*background-image: url("/img/Tapu-aa-nuku1.svg");*/
   /*background-image: url("img/tapu-aa-nuku1.svg");*/
   background-position: center center;
   /* Image doesn't repeat */
