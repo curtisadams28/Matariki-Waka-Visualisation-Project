@@ -162,3 +162,18 @@ p {
   margin-top: 12vh;
   width: 25%;
 }
+
+/* Wind Animation */
+.path {
+  display: inline;
+  stroke-dasharray: 0;
+  stroke-dashoffset: 0;
+  animation: dash 0.8s linear alternate reverse;
+
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 1000;
+  }
+}

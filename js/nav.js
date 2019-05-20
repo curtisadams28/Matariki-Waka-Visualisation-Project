@@ -9,7 +9,7 @@ $.ajax({
       break;
     }
   }
-  console.log(starmode);
+  console.log('starmode: ' + starmode);
   doAction(starmode);
   //return activestarmode;
 });
@@ -23,7 +23,6 @@ $(document).ready(function() {
 
 });
 
-// add by Andy
 function doAction(starmode){
   /*
     switch (starmode) {
