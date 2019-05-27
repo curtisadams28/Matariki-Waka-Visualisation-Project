@@ -4,7 +4,7 @@ $.preloadImages = function() {
   }
 }
 
-$.preloadImages("Matariki.svg","Tapu-aa-nuku1.svg", "stars.svg", "Tapu-aa-rangi.svg", "Ururangi.svg", "Waipuna-aa-rangi.svg", "Waitaa.svg", "Waitii.svg");
+$.preloadImages("img/Matariki.svg","img/Tapu-aa-nuku1.svg", "img/stars.svg", "img/Tapu-aa-rangi.svg", "img/Ururangi.svg", "img/Waipuna-aa-rangi.svg", "img/Waitaa.svg", "img/Waitii.svg");
 
 $.ajax({
   url: "https://matarikiwaka-functions.azurewebsites.net/api/waka/current",
