@@ -1,3 +1,10 @@
+$.preloadImages = function() {
+  for (var i = 0; i < arguments.length; i++) {
+    $("<img />").attr("src", arguments[i]);
+  }
+}
+
+$.preloadImages("Matariki.svg","Tapu-aa-nuku1.svg", "stars.svg", "Tapu-aa-rangi.svg", "Ururangi.svg", "Waipuna-aa-rangi.svg", "Waitaa.svg", "Waitii.svg");
 
 $.ajax({
   url: "https://matarikiwaka-functions.azurewebsites.net/api/waka/current",

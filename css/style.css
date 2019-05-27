@@ -168,7 +168,7 @@ p {
   display: inline;
   stroke-dasharray: 0;
   stroke-dashoffset: 0;
-  animation: dash 0.8s linear alternate reverse;
+  animation: dash 2s linear alternate reverse;
 
 }
 
