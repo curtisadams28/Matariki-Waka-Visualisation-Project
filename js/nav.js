@@ -1,11 +1,3 @@
-$.preloadImages = function() {
-  for (var i = 0; i < arguments.length; i++) {
-    $("<img />").attr("src", arguments[i]);
-  }
-}
-
-$.preloadImages("img/Matariki.svg","img/Tapu-aa-nuku1.svg", "img/stars.svg", "img/Tapu-aa-rangi.svg", "img/Ururangi.svg", "img/Waipuna-aa-rangi.svg", "img/Waitaa.svg", "img/Waitii.svg");
-
 $.ajax({
   url: "https://matarikiwaka-functions.azurewebsites.net/api/waka/current",
 }).done(function(data) {
@@ -119,3 +111,13 @@ function changeBackground(page) {
       document.getElementById("background").className = "waipuna-aa-rangi";
   }
 }
+
+    var rainfall = 0;
+
+    function normalise(val, max, min) {
+      return (val - min) / (max - min);
+    }
+
+    var rainrate = normalise(25, 30, 0) * 2000;
+
+console.log(rainrate);

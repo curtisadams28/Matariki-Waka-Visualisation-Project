@@ -81,6 +81,7 @@ body {
   position: absolute;
   top: 0;
   width: 100vw;
+  z-index: 3;
   /*
   position: absolute;
   top: 0;
@@ -176,4 +177,13 @@ p {
   to {
     stroke-dashoffset: 1000;
   }
+}
+
+#particles-js {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  z-index: 0;
 }
