@@ -22,6 +22,8 @@ $(document).ready(function() {
 
 });
 
+
+
 function doAction(starmode){
   /*
     switch (starmode) {
