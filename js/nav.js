@@ -113,13 +113,6 @@ function changeBackground(page) {
       document.getElementById("background").className = "waipuna-aa-rangi";
   }
 }
-
-    var rainfall = 0;
-
-    function normalise(val, max, min) {
-      return (val - min) / (max - min);
-    }
-
-    var rainrate = normalise(25, 30, 0) * 2000;
-
-console.log(rainrate);
+function normalise(val, max, min) {
+  return (val - min) / (max - min);
+}

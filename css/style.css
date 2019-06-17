@@ -127,8 +127,6 @@ h1 {
   font-weight: normal;
   color: white;
 
-
-
 }
 
 p {
@@ -229,4 +227,30 @@ p {
     stroke-dasharray: 400;
     stroke-dashoffset: -400;
   }
+}
+
+#moonfront {
+
+  fill: red;
+  z-index: 2;
+}
+
+#moonellipse {
+  fill: blue;
+}
+
+.moonfront {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  margin-left: -50px;
+}
+
+#moonright {
+  fill: #354260;
+
+}
+
+#moonfront {
+  fill: #f4f8ff
 }
