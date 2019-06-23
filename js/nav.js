@@ -86,8 +86,13 @@ function doAction(starmode){
 
       urlsplit = [];
 
+
+
+
       return false;
     });
+
+    
 }
 
 function changeBackground(page) {

@@ -7,8 +7,8 @@ body {
   margin: 0;
   padding: 0;
   user-select: none;
-
 }
+
 
 .matariki {
    background-image: linear-gradient(#00537F, #FFDDE4);
@@ -49,13 +49,19 @@ body {
   color: #DAE3E5;
 }
 
+/* Waitii page custom positioning */
+.waitii-img {
+  position: absolute;
+  bottom: 0px;
+  z-index: 1;
+}
+
+
+
 .scene {
-    /*background-image: url("img/Asset 5.svg");*/
     position: absolute;
     bottom: 0;
     z-index: 1;
-
-
 }
 
 .container {
@@ -147,6 +153,8 @@ p {
 .tapu h1 {
   color: #1A1A1A;
 }
+
+
 
 .waitii h1 {
   color: #FFFFFF;
@@ -253,4 +261,57 @@ p {
 
 #moonfront {
   fill: #f4f8ff
+}
+
+/* Matariki Page */
+#matarikistars {
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  height: 100vh;
+  width: 100vw;
+}
+
+.randstars {
+  opacity: 0;
+  animation: blinker 2s linear infinite;
+}
+
+@keyframes blinker {
+  3% { opacity: 0.2; }
+  50% { opacity: 1; }
+}
+
+
+/* Waitii */
+
+.water-level {
+  position: absolute;
+  bottom: 0px;
+  height: 4.5vw;
+  width: 100%;
+  background-image: linear-gradient(#00373F, #001C1E);
+  border-top: 1px solid #35707c;
+  z-index: 2;
+}
+
+/* Tapu-aa-rangi */
+#moths {
+  display: none;
+}
+
+#rangi {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  bottom: 0px;
+  z-index: 0;
+}
+
+#tapu-aa-nuku1 {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  bottom: 0px;
+  z-index: 0;
 }

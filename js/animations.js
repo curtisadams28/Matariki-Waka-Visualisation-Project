@@ -109,26 +109,21 @@ var data = {
 var request = new XMLHttpRequest()
 
 // Open a new connection, using the GET request on the URL
-request.open('GET', 'http://api.openweathermap.org/data/2.5/weather/?q=Hamilton,nz&APPID=66270021d734944e5d422a0b3cd60253', true)
+request.open('GET', 'https://api.openweathermap.org/data/2.5/weather/?q=Hamilton,nz&APPID=66270021d734944e5d422a0b3cd60253', true);
 
 request.onload = function () {
   // Begin accessing JSON data here
     var weatherdata = JSON.parse(this.response);
-    console.log(weatherdata["rain"]["3h"]);
-
-    var rainfall = weatherdata["rain"]["3h"];
-
-
-
-    var rainrate = normalise(rainfall, 100, 0) * 2000;
-
-
-    data.particles.number.value = rainrate;
-
-
-    particlesJS('particles-js', data, function() {
-      console.log('particles.json loaded...');
-
-    });
+    if (weatherdata.rain == undefined) {
+      console.log('No Rain Data');
+    }
+    else {
+      var rainfall = weatherdata["rain"]["3h"];
+      var rainrate = normalise(rainfall, 100, 0) * 2000;
+      data.particles.number.value = rainrate;
+      particlesJS('particles-js', data, function() {
+        console.log('particles.json loaded...');
+      });
+    }
 }
 request.send();

@@ -1,9 +1,5 @@
-console.log('hello');
 var moon = SunCalc.getMoonIllumination(new Date());
 var moonphase = moon.fraction;
-
-console.log(moon);
-console.log(moonphase);
 
 if (moonphase > 0.5) {
   var monorm = normalise(moonphase, 1, 0.5) * 50;
